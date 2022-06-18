@@ -13,6 +13,13 @@
 		78B945A6285DC825008AC7C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B945A4285DC825008AC7C1 /* Main.storyboard */; };
 		78B945A8285DC826008AC7C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B945A7285DC826008AC7C1 /* Assets.xcassets */; };
 		78B945AB285DC826008AC7C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B945A9285DC826008AC7C1 /* LaunchScreen.storyboard */; };
+		78B945B8285DCE16008AC7C1 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B945B7285DCE16008AC7C1 /* APICaller.swift */; };
+		78B945BA285DCE63008AC7C1 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B945B9285DCE63008AC7C1 /* APIConstants.swift */; };
+		78B945BC285DDFB0008AC7C1 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B945BB285DDFB0008AC7C1 /* CryptoTableViewCell.swift */; };
+		78B945BE285DF55E008AC7C1 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B945BD285DF55E008AC7C1 /* APIModel.swift */; };
+		78B945C0285DF765008AC7C1 /* CryptoTableViewCellModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B945BF285DF765008AC7C1 /* CryptoTableViewCellModelView.swift */; };
+		78B945C4285DFAB2008AC7C1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B945C3285DFAB2008AC7C1 /* UIView+Extension.swift */; };
+		78B945C6285DFFB2008AC7C1 /* NumberFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B945C5285DFFB2008AC7C1 /* NumberFormatter+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		78B945A7285DC826008AC7C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78B945AA285DC826008AC7C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78B945AC285DC826008AC7C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78B945B7285DCE16008AC7C1 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		78B945B9285DCE63008AC7C1 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		78B945BB285DDFB0008AC7C1 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		78B945BD285DF55E008AC7C1 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		78B945BF285DF765008AC7C1 /* CryptoTableViewCellModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCellModelView.swift; sourceTree = "<group>"; };
+		78B945C3285DFAB2008AC7C1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		78B945C5285DFFB2008AC7C1 /* NumberFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,70 @@
 		78B9459D285DC825008AC7C1 /* Crypto Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				78B9459E285DC825008AC7C1 /* AppDelegate.swift */,
-				78B945A0285DC825008AC7C1 /* SceneDelegate.swift */,
-				78B945A2285DC825008AC7C1 /* ViewController.swift */,
+				78B945C2285DFA99008AC7C1 /* Extensions */,
+				78B945B2285DCD3C008AC7C1 /* Resources */,
+				78B945B3285DCD47008AC7C1 /* Models */,
+				78B945B4285DCD51008AC7C1 /* Views */,
+				78B945B5285DCD58008AC7C1 /* ViewModels */,
+				78B945C1285DF7B3008AC7C1 /* Controllers */,
 				78B945A4285DC825008AC7C1 /* Main.storyboard */,
 				78B945A7285DC826008AC7C1 /* Assets.xcassets */,
 				78B945A9285DC826008AC7C1 /* LaunchScreen.storyboard */,
 				78B945AC285DC826008AC7C1 /* Info.plist */,
 			);
 			path = "Crypto Tracker";
+			sourceTree = "<group>";
+		};
+		78B945B2285DCD3C008AC7C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78B9459E285DC825008AC7C1 /* AppDelegate.swift */,
+				78B945A0285DC825008AC7C1 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		78B945B3285DCD47008AC7C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78B945B9285DCE63008AC7C1 /* APIConstants.swift */,
+				78B945B7285DCE16008AC7C1 /* APICaller.swift */,
+				78B945BD285DF55E008AC7C1 /* APIModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78B945B4285DCD51008AC7C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				78B945BB285DDFB0008AC7C1 /* CryptoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		78B945B5285DCD58008AC7C1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				78B945BF285DF765008AC7C1 /* CryptoTableViewCellModelView.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		78B945C1285DF7B3008AC7C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				78B945A2285DC825008AC7C1 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		78B945C2285DFA99008AC7C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				78B945C3285DFAB2008AC7C1 /* UIView+Extension.swift */,
+				78B945C5285DFFB2008AC7C1 /* NumberFormatter+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +207,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B945BE285DF55E008AC7C1 /* APIModel.swift in Sources */,
+				78B945C0285DF765008AC7C1 /* CryptoTableViewCellModelView.swift in Sources */,
 				78B945A3285DC825008AC7C1 /* ViewController.swift in Sources */,
+				78B945C6285DFFB2008AC7C1 /* NumberFormatter+Extension.swift in Sources */,
+				78B945C4285DFAB2008AC7C1 /* UIView+Extension.swift in Sources */,
+				78B945BA285DCE63008AC7C1 /* APIConstants.swift in Sources */,
+				78B945BC285DDFB0008AC7C1 /* CryptoTableViewCell.swift in Sources */,
 				78B9459F285DC825008AC7C1 /* AppDelegate.swift in Sources */,
+				78B945B8285DCE16008AC7C1 /* APICaller.swift in Sources */,
 				78B945A1285DC825008AC7C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

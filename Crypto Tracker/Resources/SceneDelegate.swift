@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Crypto Tracker
-//
-//  Created by 張竣傑 on 2022/6/18.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
